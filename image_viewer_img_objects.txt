@@ -1,0 +1,36 @@
+Program Name: Image Viewer with Image Objects
+
+Description:
+This program, image_viewer_img_objects.py, is an image viewer application built using Python's Tkinter library. It allows users to view images and switch between them using buttons. The program is enhanced with the ability to automatically create buttons for all instances of the ImageObject class defined within the script.
+
+Features:
+- Load and display images.
+- Create buttons for each ImageObject instance.
+- Switch between images using buttons.
+
+File Structure:
+1. image_viewer_img_objects.py: The main Python script containing the image viewer application.
+2. info.txt: Information file containing details about the program.
+
+Usage:
+1. Run the image_viewer_img_objects.py script using Python.
+2. The application window will appear, displaying the initial image.
+3. Buttons corresponding to each ImageObject instance will be created on the right side of the window.
+4. Click on the buttons to switch between images.
+
+Classes:
+1. ImageViewer: A class representing the main application window. It handles the creation of the GUI elements and loading/displaying images.
+2. ImageObject: A class representing an image object. Each instance of this class represents a different image to be displayed in the image viewer.
+
+Functions/Methods:
+1. ImageViewer.__init__(initial_width, initial_height): Initializes the ImageViewer class with the given initial width and height.
+2. ImageViewer.add_image_objects(): Automatically adds all instances of ImageObject class to the ImageViewer and creates buttons for them.
+3. ImageViewer.create_button(image_obj): Creates a button for a given image object.
+4. ImageViewer.load_image(image_obj): Loads and displays the image associated with the given image object.
+5. ImageObject.__init__(path): Initializes the ImageObject class with the given image file path.
+
+Dependencies:
+1. Python 3.x
+2. Tkinter
+3. Pillow (PIL)
+

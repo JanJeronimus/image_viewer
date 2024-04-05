@@ -1,0 +1,24 @@
+# ImageViewer with Dropdown Info
+
+## Description:
+`image_viewer_with_dropdown.py` is an enhanced version of the image viewer application built in Python using the tkinter library for GUI and the PIL (Python Imaging Library) module for image handling. This version includes a dropdown menu that allows users to select images from a predefined list. When an image is selected from the dropdown menu, it is loaded and displayed in the viewer window.
+
+## Features:
+- **Dropdown Menu**: Provides a dropdown menu to select images from a predefined list.
+- **Image Selection**: When an image is selected from the dropdown menu, it is loaded and displayed in the viewer window.
+- **Button Functionality**: The buttons remain functional and can also be used to load images, similar to the basic version.
+
+## Usage:
+1. Ensure you have Python installed on your system along with the required libraries (tkinter and PIL).
+2. Save the `image_viewer_with_dropdown.py` script in a directory.
+3. Open a terminal or command prompt.
+4. Navigate to the directory containing the script.
+5. Run the following command:
+    ```
+    python image_viewer_with_dropdown.py
+    ```
+6. The ImageViewer window will appear, allowing you to select images from the dropdown menu or use the buttons to load images.
+
+## Note:
+- Ensure that the image files referenced in the dropdown menu exist in the same directory as the script or provide the correct path to the images.
+
