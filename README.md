@@ -9,7 +9,7 @@ This repository contains multiple versions of an image viewer application built 
 1. `image_viewer_basic.py`: Basic version of the image viewer with buttons to load predefined images.
 2. `image_viewer_dropdown.py`: Enhanced version with a dropdown menu to select images.
 3. `image_viewer_with_menu.py`: Version with menu to select images.
-4. `image_viewer_objects.py`: Version with images as objects.
+4. `image_viewer_img_objects.py`: Version with images as objects.
 
 ## Usage:
 Each Python script can be run independently by executing it with Python. Ensure that you have Python installed on your system along with the required libraries (tkinter and PIL).
