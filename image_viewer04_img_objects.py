@@ -55,10 +55,10 @@ if __name__ == "__main__":
     initial_width, initial_height = 400, 300
     
     # Define ImageObject instances
-    img1 = ImageObject("image1.png")
-    img2 = ImageObject("image2.png")
-    img3 = ImageObject("image3.png")
-    img4 = ImageObject("image4.png")
+    img1 = ImageObject("img/image1.png")
+    img2 = ImageObject("img/image2.png")
+    img3 = ImageObject("img/image3.png")
+    img4 = ImageObject("img/image4.png")
     
     # Create ImageViewer instance
     app = ImageViewer(initial_width, initial_height)

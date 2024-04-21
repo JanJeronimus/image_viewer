@@ -1,0 +1,28 @@
+Program Name: Image Viewer Lambda
+
+Description:
+This program, image_viewer05_lambda.py, is an image viewer application built using Python's Tkinter library.
+ It allows users to view images. The program used the Lambda function in the menu.
+
+Features:
+- Load and display images.
+- Switch between images using them menu.
+
+File Structure:
+1. image_viewer05_lambda.py: The main Python script containing the image viewer application.
+2. info.txt: Information file containing details about the program.
+
+Usage:
+1. Run the image_viewer05_lambda.py script using Python.
+2. The application window will appear, displaying the initial image.
+3. Use the menu for the functions.
+
+Classes:
+1. PictureViewerApp: A class representing application. It handles the creation of the GUI elements and loading/displaying images.
+
+
+Dependencies:
+1. Python 3.x
+2. Tkinter
+3. Pillow (PIL)
+

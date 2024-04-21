@@ -17,12 +17,12 @@ To use the ImageViewer, you need to have Python installed on your system. You al
 - PIL (Python Imaging Library)
 
 ## How to Run:
-1. Save the provided code in a Python file, e.g., `image_viewer.py`.
+1. Save the provided code in a Python file, e.g., `image_viewer01_basic.py`.
 2. Open a terminal or command prompt.
 3. Navigate to the directory where the file is saved.
 4. Run the following command:
     ```
-    python image_viewer.py
+    python image_viewer01_basic.py
     ```
 5. The ImageViewer window will appear, allowing you to interact with it.
 

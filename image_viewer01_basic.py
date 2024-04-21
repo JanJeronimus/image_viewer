@@ -2,22 +2,15 @@ import tkinter as tk
 from PIL import Image, ImageTk
 import os
 
-class ImageViewerWithDropdown(tk.Tk):
+class ImageViewer(tk.Tk):
     def __init__(self, initial_width, initial_height):
         super().__init__()
 
-        self.title("Image Viewer with Dropdown")
+        self.title("Image Viewer")
 
         # Create the initial image label
         self.image_label = tk.Label(self)
         self.image_label.pack(side=tk.LEFT, padx=10, pady=10)
-
-        # Create a dropdown menu to select images
-        self.image_files = ["image1.png", "image2.png", "image3.png", "image4.png"]
-        self.selected_image = tk.StringVar()
-        self.selected_image.set(self.image_files[0])  # Set default selected image
-        self.image_dropdown = tk.OptionMenu(self, self.selected_image, *self.image_files, command=self.load_selected_image)
-        self.image_dropdown.pack(side=tk.TOP, padx=10, pady=10)
 
         # Create buttons on the right side
         self.button_frame = tk.Frame(self)
@@ -42,28 +35,23 @@ class ImageViewerWithDropdown(tk.Tk):
             # Remove existing image and display error message
             self.image_label.config(image="", text=f"Error: Image '{image_path}' not found", fg="red")
 
-    def load_selected_image(self, event=None):
-        """Load the selected image from the dropdown menu."""
-        selected_image_path = self.selected_image.get()
-        self.load_image(selected_image_path, self.winfo_width(), self.winfo_height())
-
     def button1_click(self):
         print("Button 1 clicked")
-        self.load_selected_image()
+        self.load_image("img/image1.png", self.winfo_width(), self.winfo_height())
 
     def button2_click(self):
         print("Button 2 clicked")
-        self.load_selected_image()
+        self.load_image("img/image2.png", self.winfo_width(), self.winfo_height())
 
     def button3_click(self):
         print("Button 3 clicked")
-        self.load_selected_image()
+        self.load_image("img/image3.png", self.winfo_width(), self.winfo_height())
 
     def button4_click(self):
         print("Button 4 clicked")
-        self.load_selected_image()
+        self.load_image("img/image4.png", self.winfo_width(), self.winfo_height())
 
 if __name__ == "__main__":
     initial_width, initial_height = 400, 300
-    app = ImageViewerWithDropdown(initial_width, initial_height)
+    app = ImageViewer(initial_width, initial_height)
     app.mainloop()

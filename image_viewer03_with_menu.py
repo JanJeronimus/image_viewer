@@ -1,16 +1,35 @@
 import tkinter as tk
+from tkinter import filedialog
 from PIL import Image, ImageTk
 import os
 
-class ImageViewer(tk.Tk):
+class ImageViewerWithMenuAndButtons(tk.Tk):
     def __init__(self, initial_width, initial_height):
         super().__init__()
 
-        self.title("Image Viewer")
+        self.title("Image Viewer with Menu and Buttons")
 
         # Create the initial image label
         self.image_label = tk.Label(self)
         self.image_label.pack(side=tk.LEFT, padx=10, pady=10)
+
+        # Create a menubar
+        menubar = tk.Menu(self)
+        self.config(menu=menubar)
+
+        # Create the "File" menu
+        file_menu = tk.Menu(menubar, tearoff=False)
+        menubar.add_cascade(label="File", menu=file_menu)
+        file_menu.add_command(label="Exit", command=self.exit_app)
+
+        # Create the "Images" menu
+        images_menu = tk.Menu(menubar, tearoff=False)
+        menubar.add_cascade(label="Images", menu=images_menu)
+
+        # Add "Show..." submenu for each image
+        image_files = ["img/image1.png", "img/image2.png", "img/image3.png", "img/image4.png"]
+        for image_file in image_files:
+            images_menu.add_command(label=f"Show {image_file}", command=lambda file=image_file: self.show_image(file))
 
         # Create buttons on the right side
         self.button_frame = tk.Frame(self)
@@ -35,23 +54,31 @@ class ImageViewer(tk.Tk):
             # Remove existing image and display error message
             self.image_label.config(image="", text=f"Error: Image '{image_path}' not found", fg="red")
 
+    def show_image(self, image_file):
+        """Display the selected image."""
+        self.load_image(image_file, self.winfo_width(), self.winfo_height())
+
     def button1_click(self):
         print("Button 1 clicked")
-        self.load_image("image1.png", self.winfo_width(), self.winfo_height())
+        self.show_image("img/image1.png")
 
     def button2_click(self):
         print("Button 2 clicked")
-        self.load_image("image2.png", self.winfo_width(), self.winfo_height())
+        self.show_image("img/image2.png")
 
     def button3_click(self):
         print("Button 3 clicked")
-        self.load_image("image3.png", self.winfo_width(), self.winfo_height())
+        self.show_image("img/image3.png")
 
     def button4_click(self):
         print("Button 4 clicked")
-        self.load_image("image4.png", self.winfo_width(), self.winfo_height())
+        self.show_image("vimage4.png")
+
+    def exit_app(self):
+        """Exit the application."""
+        self.destroy()
 
 if __name__ == "__main__":
     initial_width, initial_height = 400, 300
-    app = ImageViewer(initial_width, initial_height)
+    app = ImageViewerWithMenuAndButtons(initial_width, initial_height)
     app.mainloop()
