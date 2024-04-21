@@ -1,5 +1,5 @@
 # Image Viewer Repository
-# Jan Jeronimus - 5 April 2024
+# Jan Jeronimus
 
 ## Description:
 This repository contains multiple versions of an image viewer application built in Python using the tkinter library for GUI and the PIL (Python Imaging Library) module for image handling. Each version provides different functionalities or enhancements to the basic image viewer.
@@ -15,8 +15,6 @@ Blog post https://blog.jeronimus.net/2024/04/exploring-my-image-viewer-repositor
 
 Blog post https://blog.jeronimus.net/2024/04/exploring-my-image-viewer-repository_21.html 
 5. `image_viewer05_lambda.py`   : Version using lambda in menu.
-
-
 
 
 ## Usage:
