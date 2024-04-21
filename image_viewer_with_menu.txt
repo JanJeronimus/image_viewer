@@ -1,0 +1,24 @@
+# Image Viewer with Menu and Buttons Info
+
+## Description:
+`ImageViewerWithMenuAndButtons` is an enhanced version of the image viewer application built in Python using the tkinter library for GUI. This version includes both a menu and buttons for loading images. The menu allows users to select images to display, while the buttons provide an alternative way to load images quickly.
+
+## Features:
+- **File Menu**: Includes an "Exit" option to close the application.
+- **Images Menu**: Contains items for showing each image from a predefined list.
+- **Buttons**: Provide additional functionality to load images by clicking on them.
+
+## Usage:
+1. Ensure you have Python installed on your system along with the required libraries (tkinter and PIL).
+2. Save the `ImageViewerWithMenuAndButtons` script in a directory.
+3. Open a terminal or command prompt.
+4. Navigate to the directory containing the script.
+5. Run the following command:
+    ```
+    python image_viewer_with_menu_and_buttons.py
+    ```
+6. The ImageViewer window will appear, allowing you to select images from the menu or use the buttons to load images.
+
+## Note:
+- Ensure that the image files referenced in the menu and buttons exist in the same directory as the script or provide the correct path to the images.
+
