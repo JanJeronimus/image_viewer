@@ -7,13 +7,15 @@ My blogposts about this topic https://blog.jeronimus.net/search/label/ImageViewe
 
 ## Contents:
 
-Blog post https://blog.jeronimus.net/2024/04/exploring-my-image-viewer-repository.html )
+    Blog post https://blog.jeronimus.net/2024/04/exploring-my-image-viewer-repository.html
+
 1. `image_viewer01_basic.py`    : Basic version of the image viewer with buttons to load predefined images.
 2. `image_viewer02_dropdown.py` : Enhanced version with a dropdown menu to select images.
 3. `image_viewer03_with_menu.py`: Version with menu to select images.
 4. `image_viewer04_objects.py`  : Version with images as objects.
 
-Blog post https://blog.jeronimus.net/2024/04/exploring-my-image-viewer-repository_21.html 
+    Blog post https://blog.jeronimus.net/2024/04/exploring-my-image-viewer-repository_21.html 
+
 5. `image_viewer05_lambda.py`   : Version using lambda in menu.
 
 
